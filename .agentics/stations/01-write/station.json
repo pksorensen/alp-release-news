@@ -1,6 +1,7 @@
 {
   "id": "write",
   "name": "Release Manager",
+  "agent": "release-manager",
   "trigger": {
     "type": "dispatch_worker",
     "autoGit": false,
@@ -9,6 +10,10 @@
     "maxTimeoutMinutes": 60
   },
   "operatorConfig": {
-    "notify": { "channels": ["push"] }
+    "notify": {
+      "channels": [
+        "push"
+      ]
+    }
   }
 }
