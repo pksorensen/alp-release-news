@@ -77,12 +77,45 @@ Det skriver `/tmp/alp-release-news/context.json`. Læs stderr-halen:
 ikke nyheder. Er du i tvivl om, hvad en ændring betyder for brugeren, så læs koden i
 arbejdstræet: `git -C <submodul-sti> log`, eller find filen og læs den. Gæt ikke.
 
-**3. Skriv nyheden.** Hvad kan brugeren nu, eller hvad virker nu, som ikke virkede før?
-Det er alt, der skal med. Læs de eksisterende poster i releases-filen først: de er
-stilen.
+**3. Skriv nyheden.** Teksten står på en offentlig side. Den læses af almindelige
+mennesker, som bruger appen til at låne en bil. De har ikke set koden og kender ikke vores
+ord. Hver sætning skal kunne læses højt for en nabo og give mening første gang. Lyder den
+som en maskine eller en pressemeddelelse, er den forkert, og så skriver du den om.
 
-- Én sætning pr. punkt. Skriv fra brugerens side: «Du kan nu …», «En booking over flere
-  dage gemmes nu med den rigtige slutdag». Ikke hvordan det er bygget.
+Hvad kan brugeren nu, eller hvad virker nu, som ikke virkede før? Det er alt, der skal
+med. Læs de eksisterende poster i releases-filen først. De er stilen, og din post skal
+ligne dem:
+
+> Vælg tiden på et hjul: én omgang er en time, ét hak er fem minutter.
+> En booking over flere dage beholder nu sin slutdato i stedet for at slutte samme dag.
+> Invitationslinks i mails åbner appen.
+
+Sådan skriver du:
+
+- **Konkret, ikke rosende.** Sig, hvad man gør, ser eller får. Ikke hvor godt det er.
+  Skriv «Se, hvad turen koster, før du afleverer», ikke «Nu får du et bedre overblik over
+  dine udgifter».
+- **Kort.** Én sætning pr. punkt, helst under 15 ord. Højst to sætninger, og kun når den
+  anden forklarer, hvordan man bruger det.
+- **Hverdagssprog.** Brug de ord, appen selv viser: booking, tur, bil, gruppe, fripulje,
+  kvittering. Hedder knappen «Forlæng», så skriv «forlæng».
+- **En rettelse siger, hvad der var galt.** Skriv «… sender dig ikke længere til «siden
+  findes ikke»», ikke «Diverse fejlrettelser og forbedringer».
+- **Kan du ikke sige præcis, hvad der ændrede sig for brugeren, så udelad punktet.** Et
+  vagt punkt er værre end intet punkt. Læg det under «Udeladt» i PR-beskrivelsen.
+
+Disse ord og vendinger må aldrig stå i nyheden: «forbedret», «optimeret», «oplevelse»,
+«problemfri», «sømløs», «nemmere end nogensinde», «spændende», «vi er glade for», «nu
+kan du endelig», «med denne opdatering», «diverse», «forskellige forbedringer»,
+«stabilitet». Det samme gælder udråbstegn, emojis, tankestreger brugt som pynt og
+opremsninger i tre led, der bare lyder godt. Samme regel på engelsk: ingen «enhanced»,
+«seamless», «streamlined», «improved experience», «we're excited».
+
+Læs det hele igennem til sidst, som en bruger ville gøre. Står der noget, du ikke kunne
+forklare en nabo, så stryg det eller skriv det om.
+
+- Skriv fra brugerens side: «Du kan nu …», «En booking over flere dage gemmes nu med den
+  rigtige slutdag». Ikke hvordan det er bygget.
 - `items` er det nye. `fixes` er det, der var i stykker og nu virker. En release med kun
   rettelser lægger dem i `items`, for `items` må ikke være tom.
 - Dansk og engelsk siger det samme. Engelsk er ikke en ordret oversættelse.
