@@ -1,0 +1,9 @@
+{
+  "name": "Release News",
+  "description": "A Release Manager agent turns every shipped release into release news for the project's users: plain language in Danish and English, linked to the tickets the release solved, opened as a pull request for a human to merge.",
+  "version": "0.1.0",
+  "marketplace": {
+    "slug": "release-news",
+    "tags": ["Release notes", "GitHub", "Support"]
+  }
+}

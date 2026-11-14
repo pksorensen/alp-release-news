@@ -1,0 +1,6 @@
+{
+  "createTask": {
+    "title": "Release-nyhed: <version>",
+    "description": "---\nsource: \"release-news\"\nrepo: \"<owner>/<repo>\"\nversion: \"<x.y.z>\"\ntag: \"v<x.y.z>\"\nreleases_file: \"tickets/releases.json\"\ntickets_dir: \"tickets\"\ncheck: \"node tickets/tools/check-releases.mjs\"\nrun_url: \"\"\nevent: \"manual\"\n---\n\nHåndoprettet kort. Normalt opretter workflowet `alp-release-news.yml` kortet, når en release er lagt ud; brug denne form for at skrive nyheden til én bestemt version."
+  }
+}

@@ -1,0 +1,4 @@
+[
+  { "from": "write", "to": "pr-aabnet", "condition": "success" },
+  { "from": "write", "to": "stopped",   "condition": "failure" }
+]

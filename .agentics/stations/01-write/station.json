@@ -1,0 +1,14 @@
+{
+  "id": "write",
+  "name": "Release Manager",
+  "trigger": {
+    "type": "dispatch_worker",
+    "autoGit": false,
+    "initBranch": false,
+    "idleTimeoutMinutes": 20,
+    "maxTimeoutMinutes": 60
+  },
+  "operatorConfig": {
+    "notify": { "channels": ["push"] }
+  }
+}
